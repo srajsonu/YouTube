@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = UINavigationController(rootViewController: HomeViewController(collectionViewLayout: layout))
         
+        UINavigationBar.appearance().barTintColor = UIColor(displayP3Red: 230/255, green: 32/255, blue: 31/255, alpha: 1)
+        
         return true
     }
 
