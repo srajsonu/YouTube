@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .red
     }
 
 
