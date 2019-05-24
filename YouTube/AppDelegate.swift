@@ -28,6 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let statusBarBackgroundView = UIView()
         statusBarBackgroundView.backgroundColor = UIColor.rgb(displayP3Red: 194, green: 31, blue: 31)
         
+        //get rid of black bar underneath nav bar
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(),for: .default )
+        
         window?.addSubview(statusBarBackgroundView)
         window?.addConstrainsWithFormat(format: "H:|[v0]|", views: statusBarBackgroundView)
         window?.addConstrainsWithFormat(format: "V:|[v0(40)]", views: statusBarBackgroundView)
